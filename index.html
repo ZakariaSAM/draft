@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="https://kit.fontawesome.com/db8c48fa92.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,8 +58,8 @@
 
 <div class="flex flex-col justify-center items-center w-full min-h-screen bg-black p-1 ">
     <!-- content -->
-    <h1 class="text-2xl text-center text-red-600 font-bold">Sedang Berlangsung!</h1>
-    <div id="custom-carousel" class="relative w-full p-6" data-carousel="static">
+    <h1 class="text-2xl text-center text-red-600 ">Sedang Berlangsung!</h1>
+    <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
   <!-- Carousel wrapper -->
   
   <p class="text-white text-center text-lg font-semibold mb-1">Malang - Sarinah Mall</p>
@@ -127,7 +126,7 @@
             </button>
     </div>
 
-    <div id="custom-carousel" class="relative w-full p-6" data-carousel="static">
+    <div id="custom-carousel" class="relative w-full pr-6 pl-6 mt-3" data-carousel="static">
   <!-- Carousel wrapper -->
   
   <p class="text-white text-center text-lg font-semibold">Solo - The Park Mall</p>
@@ -185,11 +184,13 @@
             </button>
     </div>
     
+
+
+
 </div>
 
 <!-- full images -->
-<div class="hidden fixed inset-0 z-50 flex flex-col items-start justify-center bg-black p-5" id="thelastmummy">
-  <div class="flex flex-row items-center mb-1" data-collapse-toggle="thelastmummy">
+<div class="hidden fixed inset-0 z-50 flex flex-col items-start justify-center bg-black p-5" id="thelastmummy">  <div class="flex flex-row items-center mb-1" data-collapse-toggle="thelastmummy">
   <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
   </svg>
@@ -287,5 +288,12 @@
         </div>
     </footer>
     </div>
+
+    <!-- Auto Slide Script -->
+<script>
+  setInterval(() => {
+    document.querySelector('#custom-carousel [data-carousel-next]')?.click();
+  }, 4000); // 4000ms = 4 detik
+</script>
   </body>
 </html>
