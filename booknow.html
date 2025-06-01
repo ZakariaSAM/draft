@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <script src="https://kit.fontawesome.com/db8c48fa92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet"> 
+</head>
+<body class="bg-black" style="font-family: 'Rowdies', sans-serif;">
+    <div class="max-w-sm mx-auto bg-black"> 
+    
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-black">
+      <div class="flex flex-wrap items-center justify-between mx-auto p-3">
+          <a href="index.html" class="flex items-center ">
+              <img src="images\Logo.png" class="h-10" alt="Excito Logo" />
+              <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">EXCITO</span> -->
+          </a>
+          <!-- <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">HAUNTED HOUSE</span>
+          </a> -->
+          <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-900" aria-controls="navbar-solid-bg" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full text-center" id="navbar-solid-bg">
+              <ul class="flex flex-col text-sm mt-2 rounded-lg bg-black  justify-center">
+                  <li><a href="index.html" class="block text-white rounded-sm hover:bg-gray-500" aria-current="page">Home</a></li>
+                  <li><a href="historyril.html" class="block py-1 px-1 text-white rounded-sm hover:bg-gray-500 ">History</a></li>
+                  <li><a href="booknow.html" class="block py-1 px-1 text-white rounded-sm hover:bg-gray-500">Book Now</a></li>
+                  <li><a href="aboutus.html" class="block py-1 px-1 text-white rounded-sm hover:bg-gray-500">About Us</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!-- Navbar -->  
+
+    <!-- content -->
+    <div class="bg-red-800 p-4 m-5 rounded-xl">
+        <p class="text-white text-center text-xl">BOOK NOW</p>
+        
+<form>
+    <div class="grid gap-3 mb-6">
+        <!-- Pilihan Wahana -->
+        <div>
+        <label for="countries" class="block mb-2 text-sm font-medium text-white">Pilih Wahana</label>
+        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            <option value="25000">Villa Tua - Solo - 25k/orang</option>
+            <option value="25000">The Last Mummy - Malang - 25k/orang</option>
+            <option value="20000">Mobil Hantu - Solo - 20k/orang</option>
+            <option value="25000">Bunker - Malang - 25k/orang</option>
+        </select>
+        </div>
+        <div>
+            <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Atas Nama</label>
+            <input type="text" id="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="John" required />
+        </div>
+        
+        <div>
+        <label for="tanggal-masuk" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tanggal Masuk</label>
+        <input type="date" id="tanggal-masuk" name="tanggal-masuk" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"  required>
+        </div>
+
+
+        <div>
+        <label for="jumlah-orang" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Berapa Orang</label>
+        <input type="number" id="jumlah-orang" name="jumlah-orang"
+        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+        placeholder="Contoh: 2" min="1" required />
+        </div>
+
+        <div>
+            <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nomor WhatsApp</label>
+            <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+        </div>
+
+        <!-- Total Biaya -->
+        <div>
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Total Biaya</label>
+        <input type="text" id="total-biaya" class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" readonly />
+        </div>
+
+        <div>
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="multiple_files">Upload Bukti Transfer</label>
+            <input class="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" id="multiple_files" type="file" multiple>
+        </div> 
+        </div>
+    
+    <div class="flex items-start mb-6">
+        <div class="flex items-center h-5">
+        <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required />
+        </div>
+        <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
+    </div>
+    <button type="submit" class="text-white bg-black hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center ">Submit</button>
+</form>
+
+    </div>
+    <!-- content -->
+
+
+
+
+    <!-- footer : all media sosial, whatsapp -->
+    <footer class="bg-black shadow-sm">
+        <div class="w-full mx-auto p-4">
+            <div class="flex flex-row items-center justify-between">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="images\Logo.png" class="h-8" alt="Flowbite Logo" />
+                </a>
+                <ul class="flex flex-wrap items-center justify-center text-sm font-medium gap-1">
+                    <li>
+                        <a href="https://www.instagram.com/excitohauntedhouse" target="_blank" class="hover:underline">
+                        <svg class="w-7 h-7 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/>
+                        </svg>
+                        </a>                        
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6282132722819" target="_blank" class="hover:underline">
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z" clip-rule="evenodd"/>
+                                <path fill="currentColor" d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1.008 1.008 0 0 0-.34-.075c-.196 0-.362.098-.49.291-.146.217-.587.732-.723.886-.018.02-.042.045-.057.045-.013 0-.239-.093-.307-.123-1.564-.68-2.751-2.313-2.914-2.589-.023-.04-.024-.057-.024-.057.005-.021.058-.074.085-.101.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711-.158-.377-.366-.552-.655-.552-.027 0 0 0-.112.005-.137.005-.883.104-1.213.311-.35.22-.94.924-.94 2.16 0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537 1.412.564 2.081.63 2.461.63.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276.192-.534.243-1.117.115-1.329-.088-.144-.239-.216-.43-.308Z"/>
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@excitohauntedhouse" target="_blank" class="hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M19.321 5.562a5.124 5.124 0 0 1-.443-.258a6.228 6.228 0 0 1-1.137-.966c-.849-.971-1.166-1.956-1.282-2.645h.004c-.097-.573-.057-.943-.05-.943h-3.865v14.943c0 .2 0 .399-.008.595c0 .024-.003.046-.004.073c0 .01 0 .022-.003.033v.009a3.28 3.28 0 0 1-1.65 2.604a3.226 3.226 0 0 1-1.6.422c-1.8 0-3.26-1.468-3.26-3.281c0-1.814 1.46-3.282 3.26-3.282c.341 0 .68.054 1.004.16l.005-3.936a7.178 7.178 0 0 0-5.532 1.62a7.583 7.583 0 0 0-1.655 2.04c-.163.281-.779 1.412-.853 3.246c-.047 1.04.266 2.12.415 2.565v.01c.093.262.457 1.158 1.049 1.913a7.856 7.856 0 0 0 1.674 1.58v-.01l.009.01c1.87 1.27 3.945 1.187 3.945 1.187c.359-.015 1.562 0 2.928-.647c1.515-.718 2.377-1.787 2.377-1.787a7.43 7.43 0 0 0 1.296-2.153c.35-.92.466-2.022.466-2.462V8.273c.047.028.672.441.672.441s.9.577 2.303.952c1.006.267 2.363.324 2.363.324V6.153c-.475.052-1.44-.098-2.429-.59"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collaboration.html" class="hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" viewBox="0 0 640 512"><path fill="currentColor" d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4c-16.6 15.6-16.3 40.5-2.1 56c12.7 13.9 39.4 17.6 56.1 2.7c.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1c6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4M544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16s16 7.2 16 16s-7.2 16-16 16M0 384h64c17.7 0 32-14.3 32-32V128.2H0zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16s-16-7.2-16-16c0-8.9 7.2-16 16-16m435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4c-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2l17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6l5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1"/></svg>
+                        </a>
+                    </li>
+            </div>
+            <hr class=" mt-3 mb-3 border-gray-200 " />
+            <span class="block text-xs text-gray-500 text-center">
+                © 2023 <a href="https://flowbite.com/" class="hover:underline">ExcitoHauntedHouse</a>. All Rights Reserved.
+            </span>
+        </div>
+    </footer>
+    </div>
+
+    <!-- Auto Slide Script -->
+<script>
+  setInterval(() => {
+    document.querySelector('#custom-carousel [data-carousel-next]')?.click();
+  }, 4000); // 4000ms = 4 detik
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script>
+  const selectWahana = document.getElementById("countries");
+  const inputOrang = document.getElementById("jumlah-orang");
+  const totalBiaya = document.getElementById("total-biaya");
+
+  function hitungTotal() {
+    const harga = parseInt(selectWahana.value);
+    const jumlah = parseInt(inputOrang.value) || 0;
+    const total = harga * jumlah;
+
+    if (!isNaN(total)) {
+      totalBiaya.value = `Rp ${total.toLocaleString("id-ID")}`;
+    } else {
+      totalBiaya.value = "";
+    }
+  }
+
+  selectWahana.addEventListener("change", hitungTotal);
+  inputOrang.addEventListener("input", hitungTotal);
+</script>
+  </body>
+</html>
