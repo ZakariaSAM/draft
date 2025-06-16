@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://kit.fontawesome.com/db8c48fa92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet"> 
+</head>
+<body class="bg-black" style="font-family: 'Rowdies', sans-serif;">
+    <div class="max-w-md mx-auto bg-red-700 min-h-screen flex w-full flex-col items-center justify-center gap-3 p-3 text-center bg-center bg-cover mx-auto bg-no-repeat bg-[url('/images/bg4.jpg')] bg-blend-multiply"> 
+    
+   
+
+    <!-- content -->
+     <div class="flex flex-col justify-center">
+      <img src="images\Logo.png" class="h-20 " alt="Flowbite Logo" />
+      <h5 class="text-lg font-bold text-white text-center">Dashboard Admin</h5>
+      </div>
+    
+<div class="grid grid-cols-1 gap-3 pr-4 pl-4">
+    <a class="flex flex-row items-center p-6 gap-6 bg-white rounded-lg" href="kelolahutama.html">
+        <img src="images\icons\home.png" class="h-16 w-16 rounded-lg" alt="...">
+        <h5 class="text-md font-bold tracking-tight text-black ">Kelola Halaman Utama</h5>
+    </a>
+    <a class="flex flex-row items-center p-6 gap-6 bg-white rounded-lg" href="kelolahistory.html">
+        <img src="images\icons\history.png" class="h-16 w-16 rounded-lg" alt="...">
+        <h5 class="text-md font-bold tracking-tight text-black">Kelola Halaman History</h5>
+    </a>
+    <a class="flex flex-row items-center p-6 gap-6 bg-white rounded-lg" href="kelolahabout.html">
+        <img src="images\icons\about.png" class="h-16 w-16 rounded-lg" alt="...">
+        <h5 class="text-md font-bold tracking-tight text-black">Kelola Halaman About</h5>
+    </a>
+    <a class="flex flex-row items-center  p-6 gap-6 bg-white rounded-lg" href="kelolahbooking.html">
+        <img src="images\icons\table.png" class="h-16 w-16 rounded-lg" alt="...">
+        <h5 class="text-md font-bold tracking-tight text-black">Kelola Tabel Booking</h5>
+    </a>   
+</div>
+    <!-- content -->
+
+
+
+
+    </div>
+
+    <!-- Auto Slide Script -->
+<script>
+  setInterval(() => {
+    document.querySelector('#custom-carousel [data-carousel-next]')?.click();
+  }, 4000); // 4000ms = 4 detik
+</script>
+  </body>
+</html>
