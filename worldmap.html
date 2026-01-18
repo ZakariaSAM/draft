@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://kit.fontawesome.com/db8c48fa92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Tagesschrift&display=swap" rel="stylesheet"> 
+
+    <style>
+    /* Muncul dari bawah ke atas */
+    @keyframes slideUpAppear {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Menghilang ke bawah */
+    @keyframes slideDownDisappear {
+      from { opacity: 1; transform: translateY(0); }
+      to   { opacity: 0; transform: translateY(20px); }
+    }
+
+    .slide-up-appear {
+      animation: slideUpAppear 1.0s ease-out forwards;
+    }
+
+    .slide-down-disappear {
+      animation: slideDownDisappear 1.0s ease-in forwards;
+    }
+    </style>
+
+
+
+
+  </head>
+<body class="m-0 font-sans bg-[#101224]" style="font-family: 'Rowdies', sans-serif;">
+<div class="max-w-md mx-auto min-h-screen bg-center bg-cover mx-auto bg-no-repeat bg-[url('/images/bg3.jpg')] bg-blend-multiply">  
+  
+
+  <div class="min-h-screen flex w-full flex-col items-center justify-center">  
+  <div class="text-center text-white px-4 py-5">
+    <h1 class="text-lg font-bold">History Excito</h1>
+    <p class="text-sm mx-auto mb-5">
+      Lorem ipsum dolor sit amet. kota kalian!</p>
+  </div>
+
+  <div class="relative w-full mx-auto overflow-auto">
+    <img src="images/mapjatimjateng.svg" alt="map" class="w-full h-full object-contain" />
+
+    <!-- Pin Kota Batu -->
+
+  <!-- Gresik -->
+<div class="absolute top-[46%] left-[75%]">
+  <!-- DOT -->
+  <div class="toggle-btn relative z-10" data-toggle="gresik">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+
+  <!-- LABEL -->
+  <span class="bar absolute left-full top-1/2 ml-1 -translate-y-1/2 
+           bg-white text-black rounded-full px-2 py-1 text-xs shadow 
+           hidden whitespace-nowrap z-30" data-bar="gresik">Kota Gresik
+  </span>
+</div>
+
+  <!-- Surabaya done -6%top -->
+  <div class="absolute top-[46%] left-[78.5%] flex items-center space-x-1">
+  <div class="toggle-btn relative" data-toggle="surabaya">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+  <span class="bar absolute left-full ml-1 bg-white text-black rounded-full px-1 py-1 text-xs shadow hidden whitespace-nowrap" data-bar="surabaya">
+    Surabaya
+  </span>
+  </div>
+
+
+  <!-- Sidoarjo done -4%top -->
+  <div class="absolute top-[53%] left-[78%] flex items-center">
+  <div class="toggle-btn relative" data-toggle="sidoarjo">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+  <span
+    class="bar absolute left-full ml-1 bg-white text-black rounded-full px-1 py-1 text-xs shadow hidden" data-bar="sidoarjo">
+    Sidoarjo
+  </span>
+</div>
+
+
+ <!-- Batu -->
+<div class="absolute top-[58%] left-[75%]">
+  <!-- DOT -->
+  <div class="toggle-btn relative z-10" data-toggle="batu">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+
+  <!-- LABEL -->
+  <span class="bar absolute left-full top-1/2 ml-2 -translate-y-1/2 
+           bg-white text-black rounded-full px-2 py-1 text-xs shadow 
+           hidden whitespace-nowrap z-30" data-bar="batu">Kota Batu
+  </span>
+</div>
+
+
+  <!-- Pasuruan done -4%top -->
+  <div class="absolute top-[58%] left-[80%] flex items-center space-x-1">
+  <div class="toggle-btn relative" data-toggle="pasuruan">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+  <span class="bar absolute left-full ml-1 bg-white text-black rounded-full px-1 py-1 text-xs shadow hidden whitespace-nowrap" data-bar="pasuruan">
+    Pasuruan
+  </span>
+  </div>
+
+  <!-- Malang done -4%top -->
+  <div class="absolute top-[64%] left-[77%] flex items-center space-x-1">
+  <div class="toggle-btn relative" data-toggle="malang">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+  <span class="bar absolute left-full ml-1 bg-white text-black rounded-full px-1 py-1 text-xs shadow hidden whitespace-nowrap" data-bar="malang">
+    Kota Malang
+  </span>
+  </div>
+
+  <!-- Blitar done -4%top -->
+  <div class="absolute top-[70%] left-[72%] flex items-center space-x-1">
+  <div class="toggle-btn relative"  data-toggle="blitar">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+  <span class="bar absolute left-full ml-1 bg-white text-black rounded-full px-1 py-1 text-xs shadow hidden whitespace-nowrap" data-bar="blitar">
+    Kota Blitar
+  </span>
+  </div>
+
+  <!-- solo done -->
+  <div class="absolute top-[49%] left-[60%]">
+  <!-- DOT -->
+  <div class="toggle-btn relative z-10" data-toggle="solo">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+
+  <!-- LABEL -->
+  <span class="bar absolute left-full top-1/2 ml-1 -translate-y-1/2 
+           bg-white text-black rounded-full px-2 py-1 text-xs shadow 
+           hidden whitespace-nowrap z-30" data-bar="solo">Kota Solo
+  </span>
+  </div>
+
+  <!-- klaten done -->
+  <div class="absolute top-[57%] left-[57%]">
+  <!-- DOT -->
+  <div class="toggle-btn relative z-10" data-toggle="klaten">
+    <div class="absolute inset-0 bg-[#4362f8] rounded-full animate-ping"></div>
+    <div class="relative bg-[#4362f8] w-2 h-2 rounded-full"></div>
+  </div>
+
+  <!-- LABEL -->
+  <span class="bar absolute left-full top-1/2 ml-1 -translate-y-1/2 
+           bg-white text-black rounded-full px-2 py-1 text-xs shadow 
+           hidden whitespace-nowrap z-30" data-bar="klaten">Kota Klaten
+  </span>
+  </div>
+  </div>
+
+<!-- malang fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="malang">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="malang"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->  
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Malang</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Malang - KayuTangan</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+        <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- klaten fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="klaten">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="klaten"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Klaten</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Klaten - Klaten Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- solo fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="solo">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="solo"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Solo</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Solo - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- blitar fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="blitar">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="blitar"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Blitar</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Blitar - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- batu fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="batu">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="batu"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Batu</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Batu - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- sidoarjo fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="sidoarjo">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="sidoarjo"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Sidoarjo</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Batu - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- pasuruan fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="pasuruan">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="pasuruan"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Sidoarjo</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Batu - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Gresik fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="gresik">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="gresik"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Kota Gresik</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Gresik - Solo Town Square</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- Surabaya fullbar -->
+<div class="fullbar flex flex-col justify-center items-center w-full p-3 hidden" data-fullbar="surabaya">
+  <div class="flex flex-col justify-center items-center w-full bg-black rounded-xl relative">
+    <!-- CLOSE ICON -->
+    <button
+      type="button"
+      class="absolute top-3 right-3 z-50 text-white hover:text-red-600"
+      data-close="surabaya"
+      aria-label="Close"
+    >
+      <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+          d="M6 18 17.94 6M18 18 6.06 6" />
+      </svg>
+    </button>
+    <!-- END CLOSE ICON -->     
+      <!-- content -->
+        <h1 class="text-2xl text-white pt-2">Surabaya</h1>
+        <div id="custom-carousel" class="relative w-full pr-6 pl-6" data-carousel="static">
+      <!-- Carousel wrapper -->
+      
+      <p class="text-red-700 text-left text-lg font-semibold mb-1">Surabaya - Mall Gunawangsa</p>
+      <div class="relative overflow-hidden h-[240px] bg-black rounded-lg">
+        <!-- Slide 1 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <img src="images/historyexcito/villatuaklaten.jpg" class="w-full h-auto rounded" alt="...">
+          <div class="flex flex-col">
+            <p class="text-red-700 text-lg font-semibold">Villa Tua</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Bangunan kosong terbengkalai dari abad 14 terkenal horor dan arwah bergentayangan dimana-mana huuu takutnyo</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="grid grid-cols-2 items-center justify-center gap-3 p-3 absolute inset-0 transition-all duration-700 ease-in-out" data-carousel-item>
+          <div data-collapse-toggle="thelastmummy">
+          <img src="images/historyexcito/thelastmummy.jpg" class="w-full h-auto rounded" alt="..." >
+          </div>
+          <div class="flex flex-col">
+            <p class="text-red-700 text-base font-semibold">The Last Mummy</p>
+            <p class="text-white text-xs font-thin" style="font-family: 'Tagesschrift', system-ui;">Mummy terakhir yang telah ditemukan Menghilang, cari tim untuk menaklukannya</p>
+            <p class="text-xs text-red-700" style="font-family: 'Tagesschrift', system-ui;">Tanggal <span class="text-white text-xs">: juni - juli 2025</span></p> 
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-1 z-30 px-0 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-white/10">
+                        <svg class="w-3 h-3 text-red-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+        </div>
+
+        <div id="custom-controls-gallery" class="relative w-full p-4" data-carousel="static">
+            <!-- Carousel wrapper -->
+             <h1 class="text-2xl text-center text-white pb-2">Gallery</h1>
+        
+            <div class="relative h-56 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio1..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio3..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio2..mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio4..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                  </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <video class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" autoplay muted controls>
+                    <source src="images\profil\vidio5..mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            </div>
+            <div class="flex justify-center items-center pt-4">
+                <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="text-red-700 hover:text-red-900 group-focus:text-red-900">
+                        <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+</div>
+</div>
+
+
+
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Tutup semua bar dan fullbar kecuali key tertentu
+  const closeAll = (exceptKey = null) => {
+    document.querySelectorAll("[data-fullbar]").forEach(fullbar => {
+      const key = fullbar.dataset.fullbar;
+      const bar = document.querySelector(`[data-bar="${key}"]`);
+
+      if (key !== exceptKey) {
+        fullbar.classList.add("hidden");
+        bar.classList.add("hidden");
+      }
+    });
+  };
+
+  // Ketika toggle ditekan
+  document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const key = btn.dataset.toggle;
+      const fullbar = document.querySelector(`[data-fullbar="${key}"]`);
+      const bar = document.querySelector(`[data-bar="${key}"]`);
+
+      // Tutup bar lain
+      closeAll(key);
+
+      // Toggle ON/OFF
+      const isHidden = fullbar.classList.contains("hidden");
+
+      if (isHidden) {
+        fullbar.classList.remove("hidden");
+        bar.classList.remove("hidden");
+      } else {
+        fullbar.classList.add("hidden");
+        bar.classList.add("hidden");
+      }
+    });
+  });
+
+  // Klik bar → tutup semuanya
+  document.querySelectorAll(".bar").forEach(bar => {
+    bar.addEventListener("click", () => {
+      closeAll();
+    });
+  });
+
+});
+
+document.querySelectorAll("[data-close]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const key = btn.dataset.close;
+    document.querySelector(`[data-fullbar="${key}"]`).classList.add("hidden");
+    document.querySelector(`[data-bar="${key}"]`).classList.add("hidden");
+  });
+});
+</script>
+</html>
